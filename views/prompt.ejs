@@ -1,0 +1,61 @@
+
+    <div class="form-bootstrapp">
+        <form class="row g-3" action="/stats" enctype="multipart/form-data" method="POST">
+
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">type of burn</label>
+                <select class="form-select" name="type" id="validationDefault04" required>
+                  <option selected disabled value=""><p></p></option>
+                  <option value="electric">electric</option>
+                  <option value="thermal">thermal</option>
+                  <option value="chemical">chemical</option>
+                  <option value="radiation">radiation</option>
+                </select>
+            </div>
+            
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">High B.P.</label>
+              <select class="form-select" name="bp" id="validationDefault04" required>
+                <option selected disabled value=""><p></p></option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">diabetes</label>
+                <select class="form-select" name="diabetes" id="validationDefault04" required>
+                  <option selected disabled value=""><p></p></option>
+                  <option value="YES">YES</option>
+                  <option value="NO">NO</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">asthama</label>
+                <select class="form-select"  name="lung" id="validationDefault04" required>
+                  <option selected disabled value=""><p>...</p></option>
+                  <option value="YES">YES</option>
+                  <option value="NO">NO</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">smoking</label>
+                <select class="form-select" name="smoke" id="validationDefault04" required>
+                  <option selected disabled value=""><p>...</p></option>
+                  <option value="YES">YES</option>
+                  <option value="NO">NO</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <input  type="file" class="form-control-file" name="uploaded_file">
+            </div>
+
+            
+            <div class="col-12">
+              <button class="btn btn-primary text-center" type="submit">Submit form</button>
+            </div>
+          </form>
+     </div>
+
+
+
+  
