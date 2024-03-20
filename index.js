@@ -37,6 +37,26 @@ app.get('/check',(req,res)=>{
     res.render('checkyourburn.ejs');
 })
 
+app.get('/thermal',(req,res)=>{
+
+  res.render('thermal.ejs');
+})
+
+
+app.get('/chemical',(req,res)=>{
+
+  res.render('chemical.ejs');
+})
+
+app.get('/radiation',(req,res)=>{
+
+  res.render('radiation.ejs');
+})
+
+app.get('/electric',(req,res)=>{
+
+  res.render('electric.ejs');
+})
 app.get('/features.ejs',(req,res)=>[
     res.render('features')
     ])
@@ -98,7 +118,7 @@ const storage = multer.diskStorage({
     let config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: `http://127.0.0.1:8000/predict/?name=${ans}`,
+      url: `http://127.0.0.1:8000/predict/?name=what are remedies of second degree burns`,
       headers: { 
         ...data.getHeaders()
       },
