@@ -18,22 +18,34 @@
         <div class="button_div col-sm-12 col-lg-6 col-md-6 col-xl-6">
           <div class="div_box hero-content">
               <img src="/public/images/electric burn.png">
-              <button class="btn btn-outline-success ">Electric Burn</button>
+              <form action="/electric">
+                <button type="submit" class="btn btn-outline-success ">Electric Burn</button>
+              </form>
+             
           </div>
           
           <div class="div_box hero-content">
               <img src="/public/images/thermal burn.jpg">
-              <button class="btn btn-outline-success">Thermal Burn</button>
+              <form action="/thermal">
+                <button type="submit" class="btn btn-outline-success">Thermal Burn</button>
+              </form>
+             
           </div>
           
           <div class="div_box hero-content">
               <img src="/public/images/chemical burn.jpg">
-              <button class="btn btn-outline-success">Chemical Burn</button>
+              <form action="/chemical">
+                <button class="btn btn-outline-success">Chemical Burn</button>
+              </form>
+              
           </div>
           
           <div class="div_box hero-content">
               <img src="/public/images/radiation burn.png">
-              <button class="btn btn-outline-success">Radiation Burn</button>
+              <form action="/radiation">
+                <button class="btn btn-outline-success">Radiation Burn</button>
+              </form>
+
           </div>
           
       </div>
@@ -54,10 +66,11 @@
       <div class="row flex-item-left prompt-form">
       
       <form action="/stats" enctype="multipart/form-data" method="post">
-          <h4>Upload a File</h4> 
-          <input type="text" class ="form-control-text" name="okay">
+        <h3 >Upload</h3>
           <input type="file" class ="form-control-file" name="uploaded_file" >
-          <input type="submit" class ="btn btn-default">
+          <button type="submit" class="btn btn-outline-success">
+            Submit
+          </button>
       </form>
       
       
